@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AutoFlow — Privacy Policy</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 24px;
+      color: #1a1a1a;
+      line-height: 1.7;
+      background: #fff;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 32px;
+    }
+    .logo-icon {
+      width: 40px;
+      height: 40px;
+      background: #e53935;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+    }
+    .logo-text { font-size: 20px; font-weight: 700; }
+    .logo-sub { font-size: 13px; color: #666; }
+    h1 { font-size: 28px; font-weight: 800; margin-bottom: 4px; }
+    .updated { color: #666; font-size: 14px; margin-bottom: 40px; }
+    h2 {
+      font-size: 18px;
+      font-weight: 700;
+      margin-top: 40px;
+      margin-bottom: 12px;
+      padding-bottom: 6px;
+      border-bottom: 2px solid #f0f0f0;
+      color: #111;
+    }
+    ul { padding-left: 20px; margin: 12px 0; }
+    li { margin-bottom: 6px; }
+    .permission-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      font-size: 14px;
+    }
+    .permission-table th {
+      background: #f5f5f5;
+      padding: 10px 14px;
+      text-align: left;
+      font-weight: 600;
+    }
+    .permission-table td {
+      padding: 10px 14px;
+      border-bottom: 1px solid #eee;
+      vertical-align: top;
+    }
+    .no-box {
+      background: #f0faf0;
+      border-left: 4px solid #2e7d32;
+      padding: 14px 18px;
+      border-radius: 4px;
+      margin: 16px 0;
+    }
+    .contact-box {
+      background: #f5f5f5;
+      border-radius: 8px;
+      padding: 20px 24px;
+      margin-top: 40px;
+    }
+    a { color: #1a73e8; }
+    footer {
+      margin-top: 48px;
+      padding-top: 20px;
+      border-top: 1px solid #eee;
+      font-size: 13px;
+      color: #888;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="logo">
+    <div class="logo-icon">A</div>
+    <div>
+      <div class="logo-text">AutoFlow</div>
+      <div class="logo-sub">Powered by Google Flow</div>
+    </div>
+  </div>
+
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated: July 2026</p>
+
+  <p>AutoFlow ("the Extension") is a Chrome browser extension developed by Phin Bunhoeut that automates batch image and video generation on Google Flow (<a href="https://labs.google/fx/tools/flow">labs.google/fx/tools/flow</a>). This Privacy Policy explains what data the Extension collects, how it is used, how it is stored, and how it is shared.</p>
+
+  <h2>1. Data Collection</h2>
+  <p>AutoFlow collects and processes the following limited data solely to provide its core functionality:</p>
+  <ul>
+    <li><strong>User settings</strong> — model selection, aspect ratio preference, automation delay settings, prompt history, and license activation status. This data is entered by the user and stored locally in the browser.</li>
+    <li><strong>License key</strong> — if you purchase AutoFlow PRO, your license key is collected at the time of activation to verify your subscription status with Gumroad's API.</li>
+    <li><strong>Google Flow session</strong> — AutoFlow reads your existing Google Flow browser session (via cookies) to submit generation requests on your behalf. The session data is used only to communicate with Google Flow and is never stored by AutoFlow.</li>
+  </ul>
+  <div class="no-box">
+    AutoFlow does <strong>not</strong> collect your name, email address, IP address, location, browsing history, passwords, payment details, or any personally identifiable information beyond what is described above.
+  </div>
+
+  <h2>2. Data Use</h2>
+  <p>The data described above is used exclusively for the following purposes:</p>
+  <ul>
+    <li><strong>User settings</strong> — to restore your preferred configuration each time you open AutoFlow, so you do not need to reconfigure it.</li>
+    <li><strong>License key</strong> — to verify whether you have an active AutoFlow PRO subscription, by sending the key to Gumroad's license verification API (<code>api.gumroad.com</code>). This is the only outbound request AutoFlow makes to a non-Google server.</li>
+    <li><strong>Google Flow session</strong> — to authenticate and submit your prompts to Google Flow, trigger generation, monitor task progress, and retrieve completed results — exactly as you would do manually.</li>
+  </ul>
+  <p>AutoFlow does not use any collected data for advertising, analytics, profiling, or any purpose unrelated to its single core function of automating Google Flow generation tasks.</p>
+
+  <h2>3. Data Storage</h2>
+  <p>All user settings and license status are stored using Chrome's local <code>storage</code> API, which keeps data on your device only. This data:</p>
+  <ul>
+    <li>Never leaves your browser except as described in the Data Use section above.</li>
+    <li>Is not transmitted to any server operated by AutoFlow's developer.</li>
+    <li>Remains on your device until you uninstall the Extension or manually clear your browser's extension storage.</li>
+    <li>Is not backed up or synchronized to any cloud service by AutoFlow.</li>
+  </ul>
+
+  <h2>4. Data Sharing</h2>
+  <p>AutoFlow shares data with the following third parties only, and only as necessary to operate:</p>
+  <table class="permission-table">
+    <tr>
+      <th>Third Party</th>
+      <th>Data Shared</th>
+      <th>Purpose</th>
+    </tr>
+    <tr>
+      <td>Google (labs.google / aisandbox-pa.googleapis.com)</td>
+      <td>Your prompts, generation settings, and session credentials</td>
+      <td>To submit image/video generation requests to Google Flow on your behalf</td>
+    </tr>
+    <tr>
+      <td>Gumroad (api.gumroad.com)</td>
+      <td>Your PRO license key</td>
+      <td>To verify whether your subscription is active at activation time</td>
+    </tr>
+  </table>
+  <p>AutoFlow does <strong>not</strong> sell, rent, trade, or share your data with any other third parties, including advertisers, data brokers, or analytics providers.</p>
+
+  <h2>5. Chrome Permissions Explanation</h2>
+  <p>AutoFlow requests the following Chrome permissions, each necessary for its single purpose:</p>
+  <table class="permission-table">
+    <tr><th>Permission</th><th>Why It Is Needed</th></tr>
+    <tr><td><code>storage</code></td><td>To save your settings and license status locally on your device.</td></tr>
+    <tr><td><code>activeTab</code></td><td>To detect when you are on a Google Flow page so automation can run safely.</td></tr>
+    <tr><td><code>tabs</code></td><td>To monitor the active Google Flow tab and refresh it during batch automation.</td></tr>
+    <tr><td><code>cookies</code></td><td>To read your existing Google Flow session so AutoFlow can submit requests as you, without a separate login.</td></tr>
+    <tr><td><code>scripting</code></td><td>To interact with the Google Flow page — filling prompts, clicking generate, and reading results.</td></tr>
+    <tr><td><code>downloads</code></td><td>To save generated images and videos to your computer when auto-download is enabled.</td></tr>
+    <tr><td><code>sidePanel</code></td><td>To display AutoFlow's control panel alongside the Google Flow page.</td></tr>
+    <tr><td>Host: labs.google</td><td>To read and interact with Google Flow pages as part of the automation workflow.</td></tr>
+  </table>
+
+  <h2>6. Children's Privacy</h2>
+  <p>AutoFlow is not directed at children under the age of 13. We do not knowingly collect any data from children. If you believe a child has provided data through this Extension, please contact us so we can remove it.</p>
+
+  <h2>7. Changes to This Policy</h2>
+  <p>If this Privacy Policy changes, the updated version will be posted at this same URL (<a href="https://autoflow-privacy.netlify.app">autoflow-privacy.netlify.app</a>) with a revised "Last updated" date. Continued use of the Extension after changes are posted constitutes acceptance of the updated policy.</p>
+
+  <div class="contact-box">
+    <h2 style="margin-top:0; border:none;">8. Contact</h2>
+    <p>If you have any questions about this Privacy Policy or how AutoFlow handles your data, please contact:</p>
+    <p>
+      <strong>Developer:</strong> Phin Bunhoeut<br/>
+      <strong>Email:</strong> <a href="mailto:bunhoeut@gmail.com">bunhoeut@gmail.com</a><br/>
+      <strong>Telegram:</strong> <a href="https://t.me/Bunhoeut">@Bunhoeut</a>
+    </p>
+  </div>
+
+  <footer>AutoFlow — Made in Cambodia 🇰🇭 &nbsp;|&nbsp; <a href="https://bunhoeut.gumroad.com">bunhoeut.gumroad.com</a></footer>
+
+</body>
+</html>
