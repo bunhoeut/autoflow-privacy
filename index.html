@@ -20,7 +20,7 @@
 <p><strong>AutoFlow</strong><br>Powered by Google Flow</p>
 
 <h1>Privacy Policy</h1>
-<p><em>Last updated: September 2026</em></p>
+<p><em>Last updated: October 2026</em></p>
 
 <p>AutoFlow ("the Extension") is a Chrome browser extension developed by Phin Bunhoeut that automates batch image and video generation on Google Flow (<a href="https://flow.google.com">flow.google.com</a>, formerly labs.google/fx/tools/flow). This Privacy Policy explains what data the Extension collects, how it is used, how it is stored, and how it is shared.</p>
 
@@ -30,6 +30,7 @@
   <li><strong>User settings</strong> — model selection, aspect ratio preference, automation delay settings, prompt history, and license activation status. This data is entered by the user and stored locally in the browser.</li>
   <li><strong>License key</strong> — if you purchase AutoFlow PRO, your license key is collected at the time of activation to verify your subscription status with Gumroad's API.</li>
   <li><strong>Google Flow session</strong> — AutoFlow reads your existing Google Flow browser session (via cookies) to submit generation requests on your behalf. The session data is used only to communicate with Google Flow and is never stored by AutoFlow.</li>
+  <li><strong>Images and prompts you add</strong> — reference images you upload in the AutoFlow panel and the prompts you type or load. They are kept in the panel only while you use it and are sent only to Google Flow, as an upload you would otherwise do by hand. To pass an image to Google Flow's own upload dialog, AutoFlow briefly saves a temporary copy in your Downloads folder (in an <code>AutoFlow_tmp</code> folder) and deletes it right after the upload.</li>
 </ul>
 <p>AutoFlow does <strong>not</strong> collect your name, email address, IP address, location, browsing history, passwords, payment details, or any personally identifiable information beyond what is described above.</p>
 
@@ -69,8 +70,9 @@
 <tr><td><code>tabs</code></td><td>To monitor the active Google Flow tab and refresh it during batch automation.</td></tr>
 <tr><td><code>cookies</code></td><td>To read your existing Google Flow session so AutoFlow can submit requests as you, without a separate login.</td></tr>
 <tr><td><code>scripting</code></td><td>To interact with the Google Flow page — filling the prompt box, clicking Generate, and reading results directly from the page's own interface.</td></tr>
-<tr><td><code>downloads</code></td><td>To save generated images and videos to your computer when auto-download is enabled.</td></tr>
+<tr><td><code>downloads</code></td><td>To save generated images and videos to your computer when auto-download is enabled, and to place a short-lived temporary copy of a reference image so it can be uploaded to Google Flow (deleted right after).</td></tr>
 <tr><td><code>sidePanel</code></td><td>To display AutoFlow's control panel alongside the Google Flow page.</td></tr>
+<tr><td><code>debugger</code></td><td>To perform genuine mouse clicks and key presses on the Google Flow tab only (Google Flow ignores script-generated clicks), such as pressing Generate, choosing the model and settings, and attaching an image through Flow's own upload dialog. AutoFlow attaches only to your Google Flow tab, only while a batch is running, and detaches when it finishes. Chrome shows its standard &quot;started debugging this browser&quot; notice while this is active. It does not read other tabs and does not send any debugger data anywhere.</td></tr>
 <tr><td>Host: flow.google.com</td><td>Google Flow's current domain — required to read and interact with the Flow page as part of the automation workflow.</td></tr>
 <tr><td>Host: labs.google</td><td>Google Flow's previous domain, retained for backward compatibility with existing projects still hosted there.</td></tr>
 </table>
